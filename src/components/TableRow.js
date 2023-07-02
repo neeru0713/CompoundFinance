@@ -8,11 +8,11 @@ const TableRow = ({ data }) => {
         <td>
           <Asset data={data.collAsset} />
         </td>
-        {/* <td></td>
         <td></td>
         <td></td>
         <td></td>
-        <td></td> */}
+        <td></td>
+        <td></td>
       </tr>
     </div>
   );
