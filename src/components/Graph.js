@@ -8,8 +8,9 @@ import {
   PointElement,
   LineElement,
 } from "chart.js";
+import BarGraph from "./BarGraph";
 
-const Graph = ({ title, cost, color, graphData }) => {
+const Graph = ({ title, cost, color, graphData, barGraph }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const data = {
@@ -89,9 +90,10 @@ const Graph = ({ title, cost, color, graphData }) => {
         <h1 className={`font-semibold text-[${color}]`}>{title}</h1>
         <h2 className="text-4xl font-bold">{cost}</h2>
       </div>
-      <div className="chart-container" style={chartStyle}>
+      <div className="chart-container h-[40%]" style={chartStyle}>
         <Line data={data} options={options} onHover={handleHover} />
       </div>
+      <BarGraph data={barGraph}/>
     </div>
   );
 };
