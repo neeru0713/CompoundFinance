@@ -3,8 +3,8 @@ import TableRow from "./TableRow";
 
 const Table = ({ data }) => {
   return (
-    <div className="h-[70%] w-[100%] bg-[#1d2833] border border-0 rounded-lg mt-20">
-      <table className="flex flex-col font-semibold text-white text-sm pt-8 pl-8 w-[100%]">
+    <div className="h-[70%] w-[100%] bg-[#1d2833] border border-0 rounded-lg mt-6">
+      <table className="flex flex-col font-semibold text-white text-md pt-6 pl-8 w-[100%] ml-4">
         <thead className="flex justify-between font-semibold text-gray-400 text-xs pt-8 w-[100%] py-4">
           <th className="w-[19%]">Collateral Asset</th>
           <th className="w-[16%]">Total Supply</th>

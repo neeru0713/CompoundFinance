@@ -8,10 +8,47 @@ body {
   text-align: center;
 }
 
-th{
+th {
   text-align: left;
 }
 
-td{
+td {
   text-align: left;
+}
+
+.dashboard p {
+  @apply text-xs pb-1;
+}
+
+.dashboard img {
+  @apply w-[20px] h-[20px] mr-2 mt-1;
+}
+
+.dashboard h4 {
+  @apply text-lg;
+}
+
+.dbrow-1 > div,
+.dbrow-2 > div {
+  @apply flex flex-col items-start;
+}
+
+.dbrow-1 > div:nth-child(1),
+.dbrow-2 > div:nth-child(1) {
+  @apply w-[24%];
+}
+
+.dbrow-1 > div:nth-child(2),
+.dbrow-2 > div:nth-child(2) {
+  @apply w-[24%];
+}
+
+.dbrow-1 > div:nth-child(3),
+.dbrow-2 > div:nth-child(3) {
+  @apply w-[22%];
+}
+
+.dbrow-1 > div:nth-child(4),
+.dbrow-2 > div:nth-child(4) {
+  @apply w-[10%];
 }

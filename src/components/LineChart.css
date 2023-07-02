@@ -1,0 +1,22 @@
+.line-chart-container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
+
+.line-chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.line-chart canvas {
+  transition: background-color 0.3s ease;
+}
+
+.line-chart canvas:hover {
+  background-color: var(--line-hover-color);
+}
