@@ -75,9 +75,19 @@ const LineChart = () => {
         },
       },
       y: {
-        display: false,
+        display: true,
         ticks: {
-          display: false,
+          display: true,
+          font: {
+            size: 12,
+          },
+          callback: function (value) {
+            // Specify the custom labels you want to display
+            if (value === 50) return "Utilization 90%";
+            if (value === 20) return "Borrow APR 50%";
+            if (value === 0) return "Earn APR 39%";
+          },
+          color: ['white', '#8f66ff', '#00d395'],
         },
         grid: {
           display: false,
@@ -96,6 +106,8 @@ const LineChart = () => {
       axis: "x",
     },
   };
+  
+  
 
   Chart.register(CategoryScale);
   Chart.register(LinearScale);
