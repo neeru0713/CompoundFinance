@@ -1,5 +1,6 @@
 import React from "react";
-
+import etherium from "../etherium.png";
+import udcoin from "../usd-coin-usdc-logo.png"
 const NavBar = () => {
   return (
     <div className="flex justify-between ">
@@ -10,8 +11,16 @@ const NavBar = () => {
         <h2>Extentions</h2>
         <h1>Vote</h1>
       </div>
-      <div className="text-white flex justify-between py-4 w-[22%] items-center">
+      <div className="text-white flex justify-between py-4 w-[30%] items-center">
         <div className="flex items-center">
+        <img
+          className="h-8 rounded-full bg-black"
+          src={udcoin}
+        />
+        <img
+          className="h-8 rounded-full bg-black w-10 mr-4"
+          src={etherium}
+        />
           <p className="font-bold text-sm mr-3">USDC</p>
           <p className="text-gray-400">Ethereum</p>
         </div>

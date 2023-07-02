@@ -1,10 +1,15 @@
 import React from "react";
 import etherium from "../etherium.png";
-
+import udcoin from "../usd-coin-usdc-logo.png"
 const Header = () => {
   return (
     <div className="flex flex-col">
       <div className="flex text-white pt-12 pb-2 -ml-1">
+        
+      <img
+          className="h-10 rounded-full bg-black w-[3.5%] -ml-2 mr-3"
+          src={udcoin}
+        />
         <img
           className="h-10 rounded-full bg-black w-[3.5%] -ml-2 mr-3"
           src={etherium}
